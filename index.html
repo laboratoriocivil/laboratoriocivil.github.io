@@ -1,77 +1,302 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-12161534-17"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-12161534-17');
-</script>
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Pueblo Lab</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <meta charset="UTF-8">
-  <meta name="google-site-verification" content="XG01vxQqqp_Uo4HGn2zmaxPkeMdUidAR7OdIsG95lVc" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Laboratorio Civil</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
-  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
 </head>
-<body>
 
-  <div class="root">
-    <div class="card">
-      <div class="item">
-        <img class="item__image" src="./img/logo.jpeg" />
-        <h2 class="item__title">
-          "Este país no se construyo haciendo siempre lo mismo.” 
-        </h2>
-        <p class="item__text">
-          Si bien, las elecciones y los resultados fueron asombrosos, aún más increíble fue la cantidad 
-          de personas que se unieron después de las elecciones para hacer de su parte como ciudadanos. 
-        </p>
-        <p class="item__text">
-          Por ende, no podemos imaginar un país más preparado para una comunidad de tecnología cívica. 
-          En la actualidad, cerca de 300 empresas de alta tecnología, el 24% de las cuales son Fortune 
-          100, han establecido operaciones exitosas en Costa Rica y siguen creciendo. El día después de 
-          las elecciones nuestro país lanzó el primer satélite de América Central.
-        </p>
- 
-        <p class="item__text">
-          Por lo tanto, inspirada por comunidades como <a href="http://www.civichall.org">Civic Hall</a> y nada menos que la brillante Shuri 
-          les proponemos:
-        </p>
+<body id="top">
 
-        <h4 class="item__text">¿Que somos?</h4>
-        <p class="item__text">Una comunidad de colaboración sin fines de lucro para los innovadores cívicos de Costa Rica.</p>
-        <h4 class="item__text">¿Quienes somos?</h4>
-        <p class="item__text">Una comunidad de emprendedores sociales, empleados del gobierno, hackers, académicos, periodistas y artistas.
-        </p>
-        <h4 class="item__text">¿Que haremos?</h4>
-        <p class="item__text">Compartir conocimientos, crear herramientas y resolver problemas juntos. Trabajaremos para mejorar las vidas de las personas en nuestro país.</p>
-        <h4 class="item__text">¿Quieres participar?</h4>
-        <p class="item__text">Mandanos tu información a siguente para ser invitado a nuesta comunidad digital.</p>
-      </p>
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
 
-      <!-- Begin MailChimp Signup Form -->
-<div id="mc_embed_signup">
-<form action="https://laboratoriocivil.us18.list-manage.com/subscribe/post?u=3c5416babf715509080e0829f&amp;id=aaecc882b4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="correo" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3c5416babf715509080e0829f_aaecc882b4" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Vamos" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/long.png" alt="Homepage">
+            </a>
+        </div>
+
+        <nav class="header-nav">
+
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+            <div class="header-nav__content">
+                <h3>Navigation</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll"  href="#join" title="join">Join Us</a></li>
+                    <!-- <li><a class="smoothscroll"  href="#resources" title="works">Resources</a></li> -->
+                    <!-- <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li> -->
+                </ul>
+    
+                <p>Help us make this community! We're just beginning.</p>
+    
+                <ul class="header-nav__social">
+                    <!-- <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li> -->
+                    <li>
+                        <a href="https://twitter.com/ElPuebloLab"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/elpueblolab/"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- home
+    ================================================== -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/whitebg.jpeg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h3>Welcome to Pueblo Lab</h3>
+
+                <h1>
+                    Where civic innovators<br>
+                    technologists & leaders <br>
+                    come together for <br>
+                    social change.
+                </h1>
+
+                <div class="home-content__buttons">
+                    <a href="#join" class="smoothscroll btn btn--stroke">
+                        Join Us
+                    </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        More About Us
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+
+            <div class="home-content__line"></div>
+
+        </div> <!-- end home-content -->
+
+
+        <ul class="home-social">
+            <!-- <li>
+                <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </li> -->
+            <li>
+                <a href="https://twitter.com/ElPuebloLab"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twitter</span></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/elpueblolab/"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+        </ul> 
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--dark">Hola!</h3>
+                <h1 class="display-1 display-1--light">Somos Pueblo Lab</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full">
+                <p>
+                    <b>¿Que somos?</b><br>
+                    Una comunidad de colaboración sin fines de lucro para los innovadores cívicos de Costa Rica.
+                    <br>
+                    <b>¿Quienes somos?</b><br>
+                    Una comunidad de emprendedores sociales, empleados del gobierno, hackers, académicos, periodistas y artistas.
+                    <br>
+                    <b>¿Que haremos?</b><br>
+                    Compartir conocimientos, crear herramientas y resolver problemas juntos. Trabajaremos para mejorar las vidas de las personas en nuestro país. 
+                </p>
+            </div>
+        </div> <!-- end about-desc -->
+
+
+        <div class="about__line"></div>
+
+    </section> <!-- end s-about -->
+
+       <!-- services
+    ================================================== -->
+    <section id='join' class="s-services">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h1 class="display-2"><a href="https://goo.gl/forms/j86hrvQULTpkXTAp2">Join Our Online Community</a></h1>
+            </div>
+        </div> <!-- end section-header -->
+
+
+
+    </section> <!-- end s-services -->
+
+
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+        <div class="row footer-main">
+
+            <div class="col-six tab-full right footer-subscribe">
+
+                <h4>Get Notified</h4>
+                <p>We're just getting started. Sign up to be the first to find out when we launch.</p>
+
+                <div class="subscribe-form">
+                    <form id="mc-form" class="group" novalidate="true">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                        <input type="submit" name="subscribe" value="Subscribe">
+                        <label for="mc-email" class="subscribe-message"></label>
+                    </form>
+                </div>
+
+            </div>
+
+        </div> <!-- end footer-main -->
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright Glint 2017</span> 
+                    <span>Site Template by <a href="https://www.colorlib.com/">Colorlib</a></span>	
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
     </div>
-</form>
-</div>
 
-<!--End mc_embed_signup-->
 
-      </div>
-    </div>
-  </div>
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
