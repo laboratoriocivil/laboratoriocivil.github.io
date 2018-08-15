@@ -1,2 +1,2 @@
-# laboratoriocivil.github.io
+# pueblolab.github.io
 Landing Page
